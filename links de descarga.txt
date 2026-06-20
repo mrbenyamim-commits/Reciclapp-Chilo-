@@ -1,0 +1,3 @@
+.zip : https://www.mediafire.com/file/bd47lv49wz06pv9/alpha-reciclapp.zip/file
+
+.exe: https://www.mediafire.com/file/aivg1jwugmuzv1o/proyecto_reciclapp.exe/file
