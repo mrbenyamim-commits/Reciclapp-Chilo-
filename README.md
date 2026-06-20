@@ -1,7 +1,7 @@
-# [Nombre de tu Aplicación Móvil]
+# [ReciclApp Chiloé]
 
 ## 📱 Descripción del Proyecto
-[Breve descripción de qué hace tu aplicación, cuál es su objetivo principal y el público objetivo. Ejemplo: Una aplicación móvil diseñada para la gestión de tareas diarias...]
+Esta aplicacion esta hecha con el fin de fomentar el reciclaje y dar a conocer los puntos de estos en el sector de gamboa alto, atravez de un mapa interactivo del sector
 
 ---
 
@@ -17,10 +17,9 @@
 ---
 
 ## 🛠️ Tecnologías y Herramientas Utilizadas
-* **Framework:** React Native (Expo CLI)
-* **Estilos:** StyleSheet (Componentes nativos)
-* **Navegación:** React Navigation (Stack / Tab / Drawer)
-* **Gestor de Paquetes:** [yarn / npm]
+* **Motor de Desarrollo:** Godot Engine
+* **Diseño UI/UX:** Figma (Wireframes y Mockups analizados para la fidelidad visual)
+* **Gestor de Versiones:** Git & GitHub
 
 ---
 
