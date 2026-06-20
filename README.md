@@ -6,8 +6,11 @@
 ---
 
 ## 👥 Integrantes
-* **[Nombre del Alumno 1]** - [@UsuarioGitHub1](https://github.com/...)
-* **[Nombre del Alumno 2]** - [@UsuarioGitHub2](https://github.com/...)
+* **[Benjamin Bahamonde]** - [@MR_Benyamim](https://github.com/...)
+* **[Fransisco Ojeda]** - [@UsuarioGitHub1](https://github.com/...)
+* **[Alan]** - [@UsuarioGitHub1](https://github.com/...)
+* **[Leonardo]** - [@UsuarioGitHub1](https://github.com/...)
+* **[Matias]** - [@UsuarioGitHub2](https://github.com/...)
 
 **Profesor Evaluador:** Victor Saldivia Vera
 
