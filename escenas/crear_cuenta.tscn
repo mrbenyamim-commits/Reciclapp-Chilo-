@@ -1,0 +1,229 @@
+[gd_scene format=3 uid="uid://cqjnaxd0lbdew"]
+
+[ext_resource type="Script" uid="uid://cs7rkb6b6doeq" path="res://escenas/crear_cuenta.gd" id="1_7qw52"]
+[ext_resource type="Texture2D" uid="uid://bwnxdvdvltj5q" path="res://imagenes/title.png" id="2_kq118"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tajqu"]
+bg_color = Color(0.69411767, 0.9019608, 0.4392157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kq118"]
+bg_color = Color(0.67322516, 0.80184305, 0.68964964, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7wxqt"]
+bg_color = Color(0.491134, 0.6931091, 0.5383485, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kxlfp"]
+bg_color = Color(0.49624914, 0.65626186, 0.4891773, 1)
+
+[node name="crear cuenta" type="Control" unique_id=1910697483]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7qw52")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=899552914]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2901961, 0.7019608, 0.63529414, 1)
+
+[node name="botones" type="VBoxContainer" parent="." unique_id=949768556]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -80.5
+offset_top = -156.0
+offset_right = 80.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="crear-cuenta" type="Button" parent="botones" unique_id=540895093]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_tajqu")
+text = "crear cuenta"
+
+[node name="login" type="Button" parent="botones" unique_id=441093993]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_tajqu")
+text = "login
+"
+
+[node name="regresar" type="Button" parent="botones" unique_id=1295985233]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_tajqu")
+text = "regresar
+"
+
+[node name="texto" type="VBoxContainer" parent="." unique_id=1742348989]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -170.0
+offset_top = -528.0
+offset_right = 170.0
+offset_bottom = -181.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 35
+
+[node name="Title" type="Sprite2D" parent="texto" unique_id=1158463164]
+position = Vector2(170.00002, -71)
+scale = Vector2(0.5359108, 0.6090909)
+texture = ExtResource("2_kq118")
+
+[node name="nombre" type="LineEdit" parent="texto" unique_id=284262530]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("StyleBoxFlat_kq118")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_7wxqt")
+theme_override_styles/focus = SubResource("StyleBoxFlat_kxlfp")
+
+[node name="nombre" type="Label" parent="texto/nombre" unique_id=2059673983]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 1.0
+offset_top = -26.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+text = "Ingresar Nombre completo
+"
+
+[node name="rut" type="LineEdit" parent="texto" unique_id=1432152720]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("StyleBoxFlat_kq118")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_7wxqt")
+theme_override_styles/focus = SubResource("StyleBoxFlat_kxlfp")
+
+[node name="rut" type="Label" parent="texto/rut" unique_id=2031469294]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 1.0
+offset_top = -26.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+text = "Ingresar Rut"
+
+[node name="rut2" type="LineEdit" parent="texto" unique_id=770645728]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("StyleBoxFlat_kq118")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_7wxqt")
+theme_override_styles/focus = SubResource("StyleBoxFlat_kxlfp")
+
+[node name="rut" type="Label" parent="texto/rut2" unique_id=794124607]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 1.0
+offset_top = -26.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+text = "Ingresar Correo"
+
+[node name="rut3" type="LineEdit" parent="texto" unique_id=814152708]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("StyleBoxFlat_kq118")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_7wxqt")
+theme_override_styles/focus = SubResource("StyleBoxFlat_kxlfp")
+
+[node name="rut" type="Label" parent="texto/rut3" unique_id=1181187511]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 1.0
+offset_top = -26.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+text = "Ingresar Contraseña
+"
+
+[node name="rut4" type="LineEdit" parent="texto" unique_id=963079903]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("StyleBoxFlat_kq118")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_7wxqt")
+theme_override_styles/focus = SubResource("StyleBoxFlat_kxlfp")
+
+[node name="rut" type="Label" parent="texto/rut4" unique_id=1153234115]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 1.0
+offset_top = -26.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+text = "Repetir contraseña"
+
+[node name="rut5" type="LineEdit" parent="texto" unique_id=135182057]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("StyleBoxFlat_kq118")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_7wxqt")
+theme_override_styles/focus = SubResource("StyleBoxFlat_kxlfp")
+
+[node name="rut" type="Label" parent="texto/rut5" unique_id=1239851811]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 1.0
+offset_top = -26.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 19
+text = "Crear nombre de usuario"
+
+[connection signal="pressed" from="botones/crear-cuenta" to="." method="_on_crearcuenta_pressed"]
+[connection signal="pressed" from="botones/login" to="." method="_on_login_pressed"]
+[connection signal="pressed" from="botones/regresar" to="." method="_on_regresar_pressed"]

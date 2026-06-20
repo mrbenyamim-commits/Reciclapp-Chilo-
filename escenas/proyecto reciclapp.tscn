@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://4j7fqb1uovbb"]
+
+[ext_resource type="Script" uid="uid://c2f6nncctgg2" path="res://spripts/proyecto_reciclapp.gd" id="1_00lt3"]
+[ext_resource type="Texture2D" uid="uid://c7xsud42erfc6" path="res://imagenes/Gemini_Generated_Image_vc80jqvc80jqvc80.png" id="2_88cgk"]
+[ext_resource type="Texture2D" uid="uid://bwnxdvdvltj5q" path="res://imagenes/title.png" id="3_88cgk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oalfh"]
+bg_color = Color(0.69411767, 0.9019608, 0.4392157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mcy4f"]
+bg_color = Color(0.5046691, 0.682476, 0.27176794, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qc1g5"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sdsgd"]
+bg_color = Color(0.69411767, 0.9019608, 0.4392157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_00lt3"]
+bg_color = Color(0.26666668, 0.37254903, 0.12941177, 1)
+
+[node name="inicio" type="Control" unique_id=112370699]
+layout_mode = 3
+anchor_right = 0.26700002
+anchor_bottom = 1.005
+offset_right = 844.416
+offset_bottom = -0.23999023
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_00lt3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=704210612]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09562331, 0.5042029, 0.4367847, 1)
+
+[node name="GeminiGeneratedImageVc80Jqvc80Jqvc80" type="Sprite2D" parent="ColorRect" unique_id=982568419]
+position = Vector2(577, 324)
+scale = Vector2(0.421875, 0.4289474)
+texture = ExtResource("2_88cgk")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=326061918]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.80200005
+anchor_top = 0.89500004
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -403.90405
+offset_top = -316.64502
+offset_right = -412.0
+offset_bottom = -309.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09562331, 0.5042029, 0.4367847, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=869922240]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -68.0
+offset_top = -244.0
+offset_right = 68.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="Title" type="Sprite2D" parent="VBoxContainer" unique_id=2004952360]
+position = Vector2(69, -284)
+scale = Vector2(0.6277506, 0.6909092)
+texture = ExtResource("3_88cgk")
+
+[node name="ingresar" type="Button" parent="VBoxContainer" unique_id=1000681832]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_oalfh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mcy4f")
+theme_override_styles/focus = SubResource("StyleBoxFlat_qc1g5")
+text = "Ingresar
+"
+
+[node name="crear-cuenta" type="Button" parent="VBoxContainer" unique_id=1047226428]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_sdsgd")
+theme_override_styles/focus = SubResource("StyleBoxFlat_00lt3")
+text = "crear cuenta
+"
+
+[connection signal="pressed" from="VBoxContainer/ingresar" to="." method="_on_ingresar_pressed"]
+[connection signal="pressed" from="VBoxContainer/crear-cuenta" to="." method="_on_crear_cuenta_pressed"]
+[connection signal="pressed" from="VBoxContainer/crear-cuenta" to="." method="_on_crearcuenta_pressed"]

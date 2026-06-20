@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://d1mbl35l8i5ux"]
+
+[ext_resource type="Script" uid="uid://dh4ljgfjndeoq" path="res://escenas/inicio_mapa.gd" id="1_5yptg"]
+[ext_resource type="Texture2D" uid="uid://bwnxdvdvltj5q" path="res://imagenes/title.png" id="2_0otdt"]
+[ext_resource type="Texture2D" uid="uid://drdct0mxogi5y" path="res://imagenes/boton.png" id="2_3tnbx"]
+
+[node name="inicio-mapa" type="Control" unique_id=1045835649]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5yptg")
+
+[node name="fondo" type="ColorRect" parent="." unique_id=1666961027]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2901961, 0.7019608, 0.63529414, 1)
+
+[node name="bloque de texto" type="ColorRect" parent="." unique_id=1212653419]
+layout_mode = 0
+offset_left = 451.0
+offset_top = 200.0
+offset_right = 697.0
+offset_bottom = 245.0
+size_flags_vertical = 0
+color = Color(0.5675636, 0.8894827, 0.55132747, 1)
+
+[node name="todo xd" type="VBoxContainer" parent="." unique_id=957048585]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -119.0
+offset_top = -446.5
+offset_right = 119.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Title" type="Sprite2D" parent="todo xd" unique_id=1508750171]
+position = Vector2(119, -115.50001)
+scale = Vector2(0.7197432, 0.8000001)
+texture = ExtResource("2_0otdt")
+
+[node name="texto" type="Label" parent="todo xd" unique_id=1188413449]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 27
+text = "Mapa de gamboa:"
+
+[node name="boton-mapa" type="TextureButton" parent="todo xd" unique_id=1362213020]
+layout_mode = 2
+texture_normal = ExtResource("2_3tnbx")
+
+[node name="Button" type="Button" parent="todo xd" unique_id=1294667150]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "salir"
+
+[connection signal="pressed" from="todo xd/boton-mapa" to="." method="_on_botonmapa_pressed"]
+[connection signal="pressed" from="todo xd/Button" to="." method="_on_button_pressed"]

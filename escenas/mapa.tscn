@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://devo8oi1a154l"]
+
+[ext_resource type="Script" uid="uid://cx13fi5w7ma3a" path="res://escenas/mapa.gd" id="1_a56od"]
+[ext_resource type="Texture2D" uid="uid://bwnxdvdvltj5q" path="res://imagenes/title.png" id="2_3fyb7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3fyb7"]
+bg_color = Color(0.69411767, 0.9019608, 0.4392157, 1)
+
+[node name="mapa" type="Control" unique_id=1535667171]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a56od")
+
+[node name="fondo" type="ColorRect" parent="." unique_id=852616823]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2901961, 0.7019608, 0.63529414, 1)
+
+[node name="fondo2" type="ColorRect" parent="." unique_id=1917922985]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -173.0
+offset_top = 118.0
+offset_right = 175.0
+offset_bottom = -94.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.50595796, 0.4576007, 0.6889213, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1576362994]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.5
+offset_top = 0.5
+offset_right = 34.5
+offset_bottom = 23.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "mapa xd"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=830647585]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -66.0
+offset_top = -61.0
+offset_right = 66.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Title" type="Sprite2D" parent="VBoxContainer" unique_id=1893366914]
+position = Vector2(69, -520)
+scale = Vector2(0.6277506, 0.7151515)
+texture = ExtResource("2_3fyb7")
+
+[node name="exit" type="Button" parent="VBoxContainer" unique_id=1163212480]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_3fyb7")
+text = "atras
+"
+
+[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_login_pressed"]
